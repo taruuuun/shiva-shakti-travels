@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ShieldCheck, UserCheck, Clock, Users, MapPin, Navigation, Map } from 'lucide-react';
 import VehicleCard from '../components/VehicleCard';
 import TourPackageCard from '../components/TourPackageCard';
+import SrisailamPackagesSection from '../components/SrisailamPackagesSection';
 import AttractionCard from '../components/AttractionCard';
 import TripPricingCard from '../components/TripPricingCard';
 import { generateWhatsAppLink } from '../utils';
@@ -246,45 +247,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Section 5: Featured Tour Package */}
-      <section className="section" style={{ backgroundColor: 'var(--white)' }}>
-        <div className="container">
-          <div className="section-title-wrapper" data-aos="fade-up">
-            <span className="section-subtitle">Srisailam Tour Special</span>
-            <h2>Hyderabad → Srisailam</h2>
-            <p style={{ color: 'var(--secondary-text)', fontSize: '1.125rem', maxWidth: '700px', margin: '1rem auto 0' }}>
-              Seek the blessings of Sri Mallikarjuna Swamy Jyotirlinga and Sri Bhramarambika Devi while exploring the famous temples.
-            </p>
-          </div>
-          
-          <div className="grid grid-2" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-            <div data-aos="fade-up" data-aos-delay="100">
-              <TourPackageCard 
-                title="One-Day Srisailam Tour"
-                features={[
-                  "Hyderabad to Srisailam and back.",
-                  "Temple darshan and sightseeing.",
-                  "Comfortable vehicle.",
-                  "Pickup and drop-off arrangements."
-                ]}
-                whatsappMessage="Hello Shiva Shakti Travels! I am interested in the One-Day Srisailam tour. Please share the itinerary, available dates, and final price."
-              />
-            </div>
-            <div data-aos="fade-up" data-aos-delay="200">
-              <TourPackageCard 
-                title="Two-Day Srisailam Tour"
-                features={[
-                  "Explore major Srisailam attractions.",
-                  "More time for temple visits and sightseeing.",
-                  "Stay and return the following day.",
-                  "Pickup and drop-off arrangements."
-                ]}
-                whatsappMessage="Hello Shiva Shakti Travels! I am interested in the Two-Day Srisailam tour. Please share the itinerary, available dates, and final price."
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section 5: Srisailam Packages Section */}
+      <SrisailamPackagesSection />
 
       {/* Section 6: Srisailam Tourist Attractions */}
       <section className="section" style={{ backgroundColor: 'var(--alt-bg)' }}>
